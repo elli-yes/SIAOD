@@ -56,5 +56,5 @@ function foundChain(num) {
     }
 }
 
-console.log(hashChain(test));
+console.log(hashChain(test))
 console.log(foundChain(7))

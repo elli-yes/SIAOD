@@ -23,5 +23,5 @@ function largestPolindrome(string){
     return largest;
 }
 
-let string = 'b';
+let string = 'babaaabaaa';
 console.log(largestPolindrome(string));

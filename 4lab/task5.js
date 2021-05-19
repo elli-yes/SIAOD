@@ -15,5 +15,5 @@ function bracketFinderDeque(array){
     })
     return flag && !!deque.isEmpty();
 }
-
-console.log(bracketFinderStack ( [`[`,`]`,`[`,`]`,`[`] ))
+console.log('brackets : [][][');
+console.log(bracketFinderDeque ( [`[`,`]`,`[`,`]`,`[`] ))

@@ -19,4 +19,6 @@ function computeForm (Str)
     console.log(true)
 }
 
+computeForm('aadasc')
+
 //labs on git otchet zadachi 3 packs

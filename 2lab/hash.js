@@ -1,20 +1,10 @@
-// function generateArray(length) {
-//     let array = [length],
-//         minLimit = -250,
-//         maxLimit = 1010;
-//     for (let i = 0; i < length; i++) {
-//         array[i] = minLimit + Math.floor(Math.random() * (maxLimit - minLimit + 1));
-//     }
-//     return array;
-// }
-
 const test = [8,19,14,12,10,5,7];    
 let hashTable = new Map(),
     hashRefTable = [];
 
 function hashValue(value){
     return value%7;
-}
+}В
 
 function reHash(value){   
     const hash = hashValue(value);

@@ -48,7 +48,8 @@ DeQueue.prototype.popBack = function(){
         let temp = this.head;
         if(this.head === this.tail){
             this.head = null;
-            this.last = null;
+            this.tail = null;
+            this.size--;
         }
         else{
             this.head = this.head.next;
@@ -57,7 +58,7 @@ DeQueue.prototype.popBack = function(){
         }           
         return temp.data;
     }
-        return `It is empty`;
+        return 'It is empty';
 };
 
 DeQueue.prototype.popFront = function(){
@@ -65,7 +66,8 @@ DeQueue.prototype.popFront = function(){
         let temp = this.tail;
         if(this.head === this.tail){
             this.head = null;
-            this.last = null;
+            this.tail = null;
+            this.size --;
         }
         else{
             this.tail = this.tail.prev;
@@ -74,20 +76,20 @@ DeQueue.prototype.popFront = function(){
         }           
         return temp.data;
     }
-    else{ return `It is empty`;}
+    else{ return 'It is empty'}
 };
 
 DeQueue.prototype.isEmpty = function(){
-    return (this.tail == this.head);
+    return this.size === 0;
 };
 
 DeQueue.prototype.peekBack = function(){
-    if(this.head == null){return `it is emtpy`}
+    if(this.head == null){return 'it is emtpy'}
     return this.head.data;
 };
 
 DeQueue.prototype.peekFront = function(){
-    if(this.tail == null){return `it is emtpy`}
+    if(this.tail == null){return 'it is emtpy'}
     return this.tail.data;
 };
 

@@ -29,8 +29,8 @@ function find(str, substr){
         if (pi[i] == length){
             count++;
         }
-   }
+   }console.log(pi);
    return `${substr} встречается в ${str} ${count} раз(а)`
 }
 
-console.log(find('aabaabaaaabaabаaab', 'aabaa'));
+console.log(find('aabaabaaaabaabaaab', 'aabaa'));

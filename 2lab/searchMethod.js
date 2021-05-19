@@ -1,7 +1,7 @@
 function generateArray(length) {
     let array = [length],
-        minLimit = -250,
-        maxLimit = 1010;
+        minLimit = -25,
+        maxLimit = 10;
     for (let i = 0; i < length; i++) {
         array[i] = minLimit + Math.floor(Math.random() * (maxLimit - minLimit + 1));
     }
@@ -142,15 +142,15 @@ let array = generateArray(100);
 let test = [1,2,3,4,5,6,8,19,20,22,23];
 console.log(array);
 
-const start = Date.now();
-console.log(binarySearch(6, [4,6,5,1,2,3,11]));
-const end = Date.now();
-console.log(`time is ${end-start}'ms`);
-
 // const start = Date.now();
-// console.log(InterpolationSearch(101, array))
+// console.log(binarySearch(6, [4,6,5,1,2,3,11]));
 // const end = Date.now();
-// console.log(`time is ${end-start}'ms`)
+// console.log(`time is ${end-start}'ms`);
+
+const start = Date.now();
+console.log('Number founded in place : ',InterpolationSearch(8, array))
+const end = Date.now();
+console.log(`time is ${end-start}'ms`)
 
 // let bTree = new BinarySearchTree()
 // array.forEach(data => bTree.insert(data))

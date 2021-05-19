@@ -16,7 +16,7 @@ function findWin(str1,str2){
    
 }
 
-let str1 = '';
-let str2 = 'fgxbv';
+let str1 = `abe`;
+let str2 = 'acd';
 console.log(findWin(str1,str2));
 
